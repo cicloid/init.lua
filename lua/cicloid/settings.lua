@@ -37,3 +37,7 @@ vim.opt.clipboard = "unnamedplus"
 
 vim.opt.listchars = { tab = "▸ ", eol = "¬" }
 vim.opt.list = true
+
+vim.opt.foldlevel = 20
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

@@ -6,6 +6,11 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+    
+    -- set theme for neovim
+    use 'folke/tokyonight.nvim'
+
+    use('christoomey/vim-tmux-navigator')
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -13,7 +18,6 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use 'folke/tokyonight.nvim'
 
     use {
         'nvim-lualine/lualine.nvim',
@@ -26,6 +30,9 @@ return require('packer').startup(function(use)
     use('ThePrimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    use('tpope/vim-surround')
+
+    use('lukas-reineke/indent-blankline.nvim')
 
 
     use {
