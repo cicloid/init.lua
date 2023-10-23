@@ -1,5 +1,5 @@
 require("cicloid.remap")
-require("cicloid.packer")
+require("cicloid.lazy")
 require("cicloid.settings")
 
 vim.g.netrw_browse_split = 0
